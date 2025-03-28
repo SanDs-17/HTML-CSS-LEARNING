@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function social(){
+            let choice=document.getElementById("a").value
+            if(choice=='INSTAGRAM'){
+                   window.location.href="https://www.instagram.com"
+            }else  if(choice=='FACEBOOK'){
+                   window.location.href="https://www.facebook.com"
+            }else  if(choice=='TWITTER'){
+                   window.location.href="https://www.twitter.com"
+            }else {
+                window.location.href="https://www.netflix.com"
+            }
+        }
+
+        //onchange....
+    </script>
+</head>
+<body>
+    <select id="a">
+        <option>INSTAGRAM</option>
+        <option>FACEBOOK</option>
+        <option>TWITTER</option>
+        <option>NETFLIX</option>
+    </select>
+    <button onclick="social()">next</button>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function table(){
+            let input1 = document.getElementById("name").value
+            let input2 = Number(document.getElementById("no").value)
+            let input3 = Number( document.getElementById("pn").value)
+            let input4 =  document.getElementById("mail").value
+            let input5 = Number(document.getElementById("sub1").value)
+            let input6 = Number(document.getElementById("sub2").value)
+            let input7 = Number(document.getElementById("sub3").value)
+            let input8 = Number( document.getElementById("sub4").value)
+            let input9 = Number(document.getElementById("sub5").value)
+            let total =input5+input6+input7+input8+input9
+            let avg= total/5
+            document.getElementById("nm").innerHTML=input1
+            document.getElementById("nm").style.margin="left"
+            document.getElementById("rg").innerHTML=input2
+            document.getElementById("pn1").innerHTML=input3
+            document.getElementById("em1").innerHTML=input4
+            document.getElementById("Sub1m").innerHTML=input5
+            document.getElementById("Sub2m").innerHTML=input6
+            document.getElementById("Sub3m").innerHTML=input7
+            document.getElementById("Sub4m").innerHTML=input8
+            document.getElementById("Sub5m").innerHTML=input9
+            document.getElementById("total").innerHTML=total
+            document.getElementById("avg").innerHTML=avg
+            document.getElementById("css").style.color="red";
+
+        }
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="NAME" id="name"> <br>
+    <input type="number" placeholder="Register No" id="no"> <br>
+    <input type="number" placeholder="Phone number" id="pn"><br>
+    <input type="email" placeholder="Email" id="mail"> <br>
+    <input type="number" placeholder="Sub1" id="sub1"><br>
+    <input type="number"  placeholder="Sub2" id="sub2"><br>
+    <input type="number"  placeholder="Sub3" id="sub3"><br>
+    <input type="number"  placeholder="Sub4" id="sub4"><br>
+    <input type="number"  placeholder="Sub5" id="sub5"><br>
+    <button onclick="table()">Submit</button> <br>
+    <center>
+        <p >Name:<span id="nm" id="css" ></span></p>
+        <p>Reg_No: <span id="rg"  id="css" ></span></p>
+        <p >Phone: <span id="pn1" 
+            ></span></p>
+        <p >Email: <span id="em1"></span></p>
+        <table border>
+            <thead>
+                <tr>
+                    <th>Sub1</th>
+                    <th>Sub2</th>
+                    <th>Sub3</th>
+                    <th>Sub4</th>
+                    <th>Sub5</th>
+                    <th>Total</th>
+                    <th>Avg</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="Sub1m"></td>
+                    <td id="Sub2m"></td>
+                    <td id="Sub3m"></td>
+                    <td id="Sub4m"></td>
+                    <td id="Sub5m"></td>
+                    <td id="total"></td>
+                    <td id="avg"></td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+   
+</body>
+</html>

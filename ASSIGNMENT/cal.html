@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cal</title>
+    <style>
+        #main{
+            border: 2px black solid;
+            width: 300px;
+            height: 400px;
+            margin: 2px;
+            padding: 22px;
+            display: grid;
+           grid-template-areas: 'Tf Tf Tf Tf''cl cl mi max''sev Ei Ne sl''Fr fv sx ex''on tw th eq''ze ze dt eq';
+        }
+        #main>div{
+            background-color:white;
+            margin: 1px;
+            padding: 23px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div style="grid-area: Tf; background-color: brown; color: white;" >25</div>
+        <div style="grid-area: cl; background-color: rgb(21, 208, 241); color: white;">Clear</div>
+        <div  style="grid-area: mi; background-color: rgb(246, 170, 170); color: rgb(240, 75, 75);">-</div>
+        <div  style="grid-area: max; background-color: rgb(246, 170, 170); color: rgb(240, 75, 75);">+</div>
+        <div  style="grid-area: sev; background-color: rgb(246, 170, 170); color: rgb(240, 75, 75);">7</div>
+        <div  style="grid-area: Ei; background-color: rgb(246, 170, 170); color: rgb(240, 75, 75);">8</div>
+        <div  style="grid-area: Ne; background-color: rgb(246, 170, 170); color: rgb(240, 75, 75);">9</div>
+        <div  style="grid-area: sl; background-color: rgb(246, 170, 170); color: rgb(240, 75, 75);">/</div>
+        <div  style="grid-area: Fr; background-color: rgb(246, 170, 170); color: rgb(240, 75, 75);">4</div>
+        <div  style="grid-area: fv; background-color: rgb(246, 170, 170); color: rgb(240, 75, 75);">5</div>
+        <div  style="grid-area: sx; background-color: rgb(246, 170, 170); color: rgb(240, 75, 75);">6</div>
+        <div  style="grid-area: ex; background-color: rgb(246, 170, 170); color: rgb(240, 75, 75);">x</div>
+        <div  style="grid-area: on; background-color: rgb(246, 170, 170); color: rgb(240, 75, 75);">1</div>
+        <div  style="grid-area: tw; background-color: rgb(246, 170, 170); color: rgb(240, 75, 75);">2</div>
+        <div  style="grid-area: th; background-color: rgb(246, 170, 170); color: rgb(240, 75, 75);">3</div>
+        <div  style="grid-area: eq;background-color: red; color: white;">=</div>
+        <div  style="grid-area: ze;  background-color: rgb(246, 170, 170); color: rgb(240, 75, 75)">0</div>
+        <div  style="grid-area: dt;  background-color: rgb(246, 170, 170); color: rgb(240, 75, 75)">.</div>
+    </div>
+</body>
+</html>

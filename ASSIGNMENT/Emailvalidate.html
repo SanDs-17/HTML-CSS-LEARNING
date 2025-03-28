@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function EmailValidation(){
+            var Email=document.getElementById("mail").value 
+            var flag1=false 
+            var flag2=true
+            for(var i=0;i<Email.length;i++){
+                if(Email[i]=='@'){
+                    flag1=true
+                }
+
+                if((Email[i]>='A')&&(Email[i]<='Z')){
+                    flag2=false
+                }
+            }
+            if((flag1==true)&&(flag2==true)){
+                console.log("Valid Email Id")
+            }else{
+                console.log("Invalid Email Id")
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="mail">
+    <button onclick="EmailValidation()">Click Here</button>
+</body>
+</html>
+</body>
+</html>

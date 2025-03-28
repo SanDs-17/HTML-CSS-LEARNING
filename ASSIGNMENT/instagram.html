@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            margin-top: 30px;
+            margin-left: 300px;
+            height: 600px;
+            width: 400px;
+            border: 1px black solid;
+        }
+        #img{
+            height: 100px;
+            width: 250px;
+            margin-left: 70px;
+            margin-top: 50px;
+        }
+        .input{
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+        #input{
+            width: 83%;
+            height: 35px;
+        }
+        #pass{
+            margin-top: 5px;
+            width: 83%;
+            height: 35px;   
+        }
+        button{
+            width: 77%;
+            height: 35px; 
+            margin-left: 40px;
+            margin-top: 13px;
+            border: none;
+            color: white;
+            font-weight:bolder;
+            background-color:#23a0f3;
+            border-radius: 6px;
+        }
+        .span{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            margin-top: 40px;
+        }
+        .span :nth-child(1),:nth-child(3){
+        
+        }
+        #or{
+
+
+        }
+        #log{
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="content">
+            <img  id="img" src="./Screenshot 2024-08-21 095831.png" alt="">
+            <form action="" class="form">
+                <div class="input">
+                    <input id="input" type="text" required placeholder="Phone number, username, or email">
+                    <input id="pass" type="password" required placeholder="Password">
+                </div>
+            </form>
+            <button>Log in</button>
+        </div>
+        <div class="span">
+            <span></span>
+            <span id="or">OR</span>
+            <span></span>
+        </div>
+        <div id="log">
+            <a href="">Log in with Facebook
+            </a>
+        </div>
+        <div >
+            <a href="">
+                Forgot password?
+            </a>
+        </div>
+    </div>
+    <div>
+        Don't have an account?<a href="">Sign up</a>
+    </div>
+</body>
+</html>
