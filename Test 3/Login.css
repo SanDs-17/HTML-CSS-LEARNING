@@ -1,0 +1,29 @@
+body{
+    box-sizing: border-box;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    justify-content: center;
+    margin-top: 300px;
+    margin-left: 650px;
+}
+
+
+input{
+    padding: 5px;
+    margin: 8px;
+}
+
+label{
+    margin: 8px;
+}
+input[type="submit"]{
+    padding: px;
+    background-color: blue;
+    text-align: center;
+    font-weight:bold;
+    
+}

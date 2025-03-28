@@ -1,0 +1,25 @@
+h2{
+    color: blue;
+}
+
+
+#A{
+    color: red;
+}
+
+.dm{
+    background-color: green;
+}
+
+
+*{
+    background-color: aqua;
+}
+
+h1,h2,h3{
+    border: 2px solid black;
+}
+
+h4{
+    color: brown;
+}
